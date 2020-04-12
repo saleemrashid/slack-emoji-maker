@@ -1,0 +1,63 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
+    margin: 0 auto;
+    max-width: 60em;
+    text-align: center;
+}
+
+.ql-editor {
+    font-family: Catamaran;
+    font-size: 2em;
+    text-align: center;
+}
+
+.button {
+    background: #8c8;
+    border-radius: 8px;
+    box-shadow: 0px 0.4em 0px #493;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+    margin: 0 0 0.4em;
+    padding: 0.6em 2em;
+    position: relative;
+    text-decoration: none;
+    transition: top 0.2s ease;
+}
+
+.button:active {
+    top: 0.2em;
+    box-shadow: 0px 0.2em 0px #493;
+}
+
+.preview-small {
+    height: 16px;
+    width: 16px;
+    padding: 11px;
+}
+
+.preview-medium {
+    height: 22px;
+    width: 22px;
+    padding: 11px;
+}
+
+.preview-large {
+    height: 32px;
+    width: 32px;
+    padding: 16px;
+}
+
+.preview-light {
+    background: #F8F8F8;
+}
+
+.preview-dark {
+    background: #1D1C1D;
+}
+
+#canvas {
+    background: linear-gradient(45deg, #0002 25%, #0000 25%, #0000 75%, #0002 75%, #0002 0), linear-gradient(45deg, #0002 25%, #0000 25%, #0000 75%, #0002 75%, #0002 0);
+    background-position: 0 0, 8px 8px;
+    background-size: 16px 16px;
+}
