@@ -104,6 +104,8 @@ function binarySearchMaximum(low, high, callback) {
     return low - 1;
 }
 
+let lastUrl = null;
+
 function updateCanvas() {
     ctx.miterLimit = 2;
     ctx.textBaseline = "top";
@@ -148,7 +150,9 @@ function updateCanvas() {
     }
 
     canvas.toBlob((blob) => {
+        URL.revokeObjectURL(lastUrl);
         const url = URL.createObjectURL(blob);
+        lastUrl = url;
         favicon.href = url;
         downloadButton.download = filename + ".png";
         downloadButton.href = url;
